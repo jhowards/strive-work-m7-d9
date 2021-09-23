@@ -8,7 +8,22 @@ export interface CommentsData {
   date: string;
 }
 
-const DishComments = ({ selectedPasta }: any) => (
+export interface DishData {
+  category: string;
+  comments: any;
+  description: string;
+  id: number;
+  image: string;
+  label: string;
+  name: string;
+  price: string;
+}
+
+const DishComments = ({
+  selectedPasta,
+}: {
+  selectedPasta: DishData | null;
+}) => (
   <Container>
     <Row className="justify-content-center mt-3">
       <Col xs={12} md={6}>

@@ -6,7 +6,7 @@ interface ComponentProps {
     pathname: string;
   };
 }
-const title = "Strivestaurant";
+let title = "TypeScript Strivestaurant" as string;
 
 const MyNav = (props: ComponentProps) => (
   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
