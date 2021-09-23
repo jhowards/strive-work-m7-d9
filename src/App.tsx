@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Router>
-        <MyNav title="Strivestaurant" />
+        <MyNav />
         <Route
           exact
           path="/"
